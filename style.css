@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margins */
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#message {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#resetButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
